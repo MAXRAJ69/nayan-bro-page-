@@ -1,0 +1,142 @@
+:root {
+  --bg-color: #030305;
+  --surface-color: rgba(0, 255, 170, 0.03);
+  --surface-border: rgba(0, 255, 170, 0.15);
+  --text-primary: #ffffff;
+  --text-secondary: #8892b0;
+  --accent-color: #00ffaa; /* Neon Green/Cyan */
+  --accent-glow: rgba(0, 255, 170, 0.4);
+  --gradient-accent: linear-gradient(135deg, #00ffaa 0%, #00bfff 100%);
+  --font-main: 'Orbitron', 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--surface-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+}
+
+/* Typography utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.text-gradient {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-text {
+  text-shadow: 0 0 20px var(--accent-glow);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Common Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Utility Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Glitch Effect */
+.glitch-hover {
+  position: relative;
+}
+
+.glitch-hover:hover::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 2px 0 blue;
+  top: 0;
+  color: white;
+  background: var(--bg-color);
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% { clip: rect(38px, 9999px, 86px, 0); }
+  5% { clip: rect(72px, 9999px, 14px, 0); }
+  10% { clip: rect(98px, 9999px, 20px, 0); }
+  15% { clip: rect(6px, 9999px, 76px, 0); }
+  20% { clip: rect(48px, 9999px, 2px, 0); }
+  25% { clip: rect(25px, 9999px, 50px, 0); }
+  30% { clip: rect(81px, 9999px, 11px, 0); }
+  35% { clip: rect(22px, 9999px, 33px, 0); }
+  40% { clip: rect(92px, 9999px, 64px, 0); }
+  45% { clip: rect(51px, 9999px, 4px, 0); }
+  50% { clip: rect(13px, 9999px, 99px, 0); }
+  55% { clip: rect(78px, 9999px, 45px, 0); }
+  60% { clip: rect(35px, 9999px, 88px, 0); }
+  65% { clip: rect(66px, 9999px, 27px, 0); }
+  70% { clip: rect(9px, 9999px, 62px, 0); }
+  75% { clip: rect(59px, 9999px, 18px, 0); }
+  80% { clip: rect(85px, 9999px, 71px, 0); }
+  85% { clip: rect(41px, 9999px, 39px, 0); }
+  90% { clip: rect(27px, 9999px, 93px, 0); }
+  95% { clip: rect(74px, 9999px, 5px, 0); }
+  100% { clip: rect(16px, 9999px, 53px, 0); }
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
