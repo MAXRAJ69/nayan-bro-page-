@@ -11,79 +11,162 @@ export default function BrandWork() {
       logo: "/brands/rog.png",
       description: "Official brand ambassador and campaign promotion.",
       tags: ["Gaming Laptop", "Sponsorship", "Event"],
-      link: "#",
+      link: "https://rog.asus.com/",
     },
-
     {
       title: "Monster Energy",
       logo: "/brands/monster.png",
       description: "Exclusive lifestyle content creation for Monster Energy India.",
       tags: ["Lifestyle", "Brand Deal", "Vlog"],
-      link: "#",
+      link: "https://www.monsterenergy.com/",
+      scale: 0.75,
     },
-
     {
       title: "Free Fire World Series",
       logo: "/brands/freefire.png",
       description: "Official streaming partner and tournament caster for FFWS.",
       tags: ["Esports", "Tournament", "Casting"],
-      link: "#",
+      link: "https://ffws.garena.com/",
     },
     {
       title: "OnePlus",
       logo: "/brands/oneplus.png",
       description: "Mobile gaming performance testing and flagship device promotions.",
       tags: ["Mobile", "Review", "Sponsorship"],
-      link: "#",
+      link: "https://www.oneplus.in/",
+      scale: 0.75,
     },
     {
       title: "Oppo",
       logo: "/brands/oppo.jpg",
       description: "Partnered for mobile esports events and device showcases.",
       tags: ["Mobile", "Esports", "Sponsorship"],
-      link: "#",
+      link: "https://www.oppo.com/",
+      scale: 0.75,
     },
     {
       title: "Samsung",
       logo: "/brands/samsung.png",
       description: "Collaborative promotions for Samsung Galaxy gaming capabilities.",
       tags: ["Mobile", "Sponsorship", "Review"],
-      link: "#",
+      link: "https://www.samsung.com/",
     },
     {
       title: "Vi (Vodafone Idea)",
       logo: "/brands/vi.jpg",
       description: "Official telecom partner ensuring seamless low-latency gaming streams.",
       tags: ["Telecom", "Sponsorship", "Connectivity"],
-      link: "#",
+      link: "https://www.myvi.in/",
+      scale: 0.85,
     },
     {
       title: "AMD",
       logo: "/brands/amd.png",
       description: "Powered by AMD processors for peak gaming and streaming performance.",
       tags: ["Hardware", "Sponsorship", "Performance"],
-      link: "#",
+      link: "https://www.amd.com/",
+      scale: 0.75,
     },
     {
       title: "Lenskart",
       logo: "/brands/lenskart.png",
       description: "Partnered for anti-glare gaming eyewear and lifestyle accessories.",
       tags: ["Lifestyle", "Eyewear", "Sponsorship"],
-      link: "#",
+      link: "https://www.lenskart.com/",
     },
     {
       title: "Garena",
       logo: "/brands/garena.png",
       description: "Official community events and in-game collaborations for Free Fire.",
       tags: ["Gaming", "Publisher", "Events"],
-      link: "#",
+      link: "https://www.garena.com/",
     },
     {
       title: "AORUS",
       logo: "/brands/aorus.png",
       description: "Premium gaming hardware sponsor for ultimate streaming setups.",
       tags: ["Hardware", "Sponsorship", "Setup"],
-      link: "#",
+      link: "https://www.aorus.com/",
+      scale: 0.75,
+    },
+    {
+      title: "Indian Super Gaming League",
+      logo: "/brands/isgl.png",
+      description: "Official partner for the Indian Super Gaming League, participating in top-tier national esports tournaments.",
+      tags: ["Esports", "Tournament", "League"],
+      link: "https://isgl.in/",
+      scale: 0.75,
+    },
+    {
+      title: "Thums Up",
+      logo: "/brands/thumsup.png",
+      description: "Official energy and beverage partner for intense gaming sessions and live streams.",
+      tags: ["Beverage", "Sponsorship", "Lifestyle"],
+      link: "https://www.coca-colacompany.com/brands/thums-up",
+      scale: 0.75,
+    },
+    {
+      title: "Star Sports",
+      logo: "/brands/starsports.png",
+      description: "Official broadcasting partner for major esports tournaments and gaming events on national television.",
+      tags: ["Broadcasting", "Television", "Esports"],
+      link: "https://www.starsports.com/",
+      scale: 0.75,
+    },
+    {
+      title: "International Cricket Council",
+      logo: "/brands/icc.png",
+      description: "Promotional partnership for digital campaigns and content creation around major international cricket events.",
+      tags: ["Sports", "Cricket", "Partnership"],
+      link: "https://www.icc-cricket.com/",
+      scale: 0.8,
+    },
+    {
+      title: "Google Gemini",
+      logo: "/brands/gemini.png",
+      description: "Powered by Google Gemini for cutting-edge AI assistance, enhancing creative workflows and advanced productivity.",
+      tags: ["AI", "Technology", "Partnership"],
+      link: "https://gemini.google.com/",
+      scale: 0.75,
+    },
+    {
+      title: "BattleBucks",
+      logo: "/brands/battlebucks.png",
+      description: "Official partnership with BattleBucks for skill-based gaming competitions, tournaments, and exclusive community events.",
+      tags: ["Gaming Platform", "Tournaments", "Esports"],
+      link: "https://battlebucks.com/",
+      scale: 1.8,
+    },
+    {
+      title: "Acer",
+      logo: "/brands/acer.png",
+      description: "Official hardware partner providing high-performance gaming laptops, monitors, and cutting-edge esports gear.",
+      tags: ["Hardware", "Laptop", "Sponsorship"],
+      link: "https://www.acer.com/",
+    },
+    {
+      title: "Alienware",
+      logo: "/brands/alienware.png",
+      description: "Premium hardware partnership featuring top-tier gaming setups, high-performance desktops, and elite esports gear.",
+      tags: ["Hardware", "Sponsorship", "Setup"],
+      link: "https://www.alienware.com/",
+      scale: 1.8,
+    },
+    {
+      title: "Zostel",
+      logo: "/brands/zostel.png",
+      description: "Official travel and accommodation partner for esports tournaments, bootcamp retreats, and content creation.",
+      tags: ["Travel", "Accommodation", "Sponsorship"],
+      link: "https://www.zostel.com/",
+      scale: 0.65,
+    },
+    {
+      title: "Esports World Cup",
+      logo: "/brands/ewc.png",
+      description: "Official competitive partner for the Esports World Cup, participating in massive global tournaments.",
+      tags: ["Esports", "Global", "Tournament"],
+      link: "https://esportsworldcup.com/",
+      scale: 0.7,
     },
   ];
 
@@ -170,7 +253,7 @@ function BrandCard({ brand, variants }: { brand: any; variants: any }) {
             whileHover={{ rotate: 10, scale: 1.1 }}
             className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden border border-white/20 p-2 shadow-inner"
           >
-            <img src={brand.logo} alt={brand.title} className="w-full h-full object-contain" />
+            <img src={brand.logo} alt={brand.title} className="w-full h-full object-contain" style={{ transform: brand.scale ? `scale(${brand.scale})` : 'scale(1)' }} />
           </motion.div>
           <h3 className="text-2xl font-bold text-white uppercase tracking-wide group-hover:text-red-400 transition-colors">
             {brand.title}
@@ -196,7 +279,7 @@ function BrandCard({ brand, variants }: { brand: any; variants: any }) {
             whileHover={{ x: 5, rotate: -15 }}
             className="flex gap-3 text-gray-400"
           >
-            <a href={brand.link} className="text-white hover:text-red-500 transition-colors bg-white/5 hover:bg-white/10 p-2 rounded-full" aria-label="External Link">
+            <a href={brand.link} target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-500 transition-colors bg-white/5 hover:bg-white/10 p-2 rounded-full" aria-label="External Link">
               <ExternalLink size={20} />
             </a>
           </motion.div>
